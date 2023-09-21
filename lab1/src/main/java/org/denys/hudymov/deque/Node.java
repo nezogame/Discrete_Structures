@@ -1,4 +1,4 @@
-package org.denys.hudymov;
+package org.denys.hudymov.deque;
 
 import lombok.*;
 
@@ -10,5 +10,5 @@ import lombok.*;
 @Builder
 public class Node<T> {
     private T value;
-    private Node<T> next;
+    private Node<T> next, prev;
 }

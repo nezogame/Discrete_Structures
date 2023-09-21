@@ -1,4 +1,4 @@
-package org.denys.hudymov;
+package org.denys.hudymov.deque;
 
 import lombok.*;
 
@@ -22,8 +22,10 @@ public class DequeImpl<T> implements Deque<T> {
         if (isEmpty()) {
             addFirstValue(node);
         } else {
-            node.setNext(front);
+            Node<T> prevHead = getFront();
+            front.setPrev(node);
             setFront(node);
+            getFront().setNext(prevHead);
         }
     }
 
@@ -35,7 +37,9 @@ public class DequeImpl<T> implements Deque<T> {
         if (isEmpty()) {
             addFirstValue(node);
         } else {
-            tail.setNext(node);
+            Node<T> prevTail = getTail();
+            node.setPrev(getTail());
+            prevTail.setNext(node);
             setTail(node);
         }
     }
@@ -44,8 +48,12 @@ public class DequeImpl<T> implements Deque<T> {
     public void deleteFront() {
         if (isEmpty()) {
             System.out.println("Deque already clean");
+        } else if (countSize() == 1) {
+            front = null;
+            tail = null;
         } else {
             front = front.getNext();
+            front.setPrev(null);
         }
     }
 
@@ -53,8 +61,11 @@ public class DequeImpl<T> implements Deque<T> {
     public void deleteTail() {
         if (isEmpty()) {
             System.out.println("Deque already clean");
+        } else if (countSize() == 1) {
+            front = null;
+            tail = null;
         } else {
-            setTail(getNodeAt(countSize() - 1));
+            tail = tail.getPrev();
             tail.setNext(null);
         }
     }
@@ -79,7 +90,7 @@ public class DequeImpl<T> implements Deque<T> {
     public void swapLastAndFirst() {
         Node<T> node = getTail();
         if (!isEmpty()) {
-            Node<T> beforeLastNode = getNodeAt(countSize() - 1);
+            Node<T> beforeLastNode = getTail().getPrev();
             beforeLastNode.setNext(null);
             node.setNext(getFront().getNext());
             setTail(getFront());
@@ -110,7 +121,7 @@ public class DequeImpl<T> implements Deque<T> {
 
     @Override
     public void reverse() {
-        if (getFront() == null) {
+        if (isEmpty()) {
             return;
         }
         setTail(recursiveSwap(getFront()));
@@ -157,18 +168,6 @@ public class DequeImpl<T> implements Deque<T> {
     private void addFirstValue(Node<T> node) {
         setFront(node);
         setTail(node);
-    }
-
-    private Node<T> getNodeAt(int index) throws ArrayIndexOutOfBoundsException {
-        if (countSize() < index) {
-            throw new IndexOutOfBoundsException("No value present in index: " + index);
-        }
-        Node<T> node = getFront();
-        while (index != 1) {
-            node = node.getNext();
-            index--;
-        }
-        return node;
     }
 
     private Node<T> recursiveSwap(Node<T> node) {
