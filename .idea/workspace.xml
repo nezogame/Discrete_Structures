@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9c35258-7137-44b7-bbce-962c144bd15c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f9c35258-7137-44b7-bbce-962c144bd15c" name="Changes" comment="was created interface with all needed methods of multi-list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/ConsoleInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/deque/ConsoleInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/deque/Deque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/DequeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/deque/DequeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/deque/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/src/test/java/org/denys/hudymov/DequeImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/src/test/java/org/denys/hudymov/deque/DequeImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,12 +169,64 @@
       <updated>1695186078920</updated>
       <workItem from="1695186079935" duration="140000" />
       <workItem from="1695288486852" duration="7429000" />
-      <workItem from="1695307694554" duration="19285000" />
+      <workItem from="1695307694554" duration="19995000" />
     </task>
+    <task id="LOCAL-00001" summary="idea files">
+      <created>1695329506083</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329506083</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Class and interface were moved to the deque package and deleted unit test without the body">
+      <created>1695329648914</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329648914</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Was changed package due to moving to deque package all related stuff">
+      <created>1695329719772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329719772</updated>
+    </task>
+    <task id="LOCAL-00004" summary="was added prev reference field and changed some logic related to the last and before the last element of the deque and fixed the bug with the delete methods">
+      <created>1695329876387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329876387</updated>
+    </task>
+    <task id="LOCAL-00005" summary="was created Node for multi-list">
+      <created>1695329938789</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329938789</updated>
+    </task>
+    <task id="LOCAL-00006" summary="was created interface with all needed methods of multi-list">
+      <created>1695329982945</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329982945</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="idea files" />
+    <MESSAGE value="Class and interface were moved to the deque package and deleted unit test without the body" />
+    <MESSAGE value="Was changed package due to moving to deque package all related stuff" />
+    <MESSAGE value="was added prev reference field and changed some logic related to the last and before the last element of the deque and fixed the bug with the delete methods" />
+    <MESSAGE value="was created Node for multi-list" />
+    <MESSAGE value="was created interface with all needed methods of multi-list" />
+    <option name="LAST_COMMIT_MESSAGE" value="was created interface with all needed methods of multi-list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
