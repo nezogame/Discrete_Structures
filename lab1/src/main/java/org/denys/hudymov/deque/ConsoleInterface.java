@@ -1,4 +1,4 @@
-package org.denys.hudymov;
+package org.denys.hudymov.deque;
 
 import java.util.Optional;
 import java.util.Scanner;

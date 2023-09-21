@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9c35258-7137-44b7-bbce-962c144bd15c" name="Changes" comment="" />
+    <list default="true" id="f9c35258-7137-44b7-bbce-962c144bd15c" name="Changes" comment="was created interface with all needed methods of multi-list">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2VeAGmiWaAf5GLIwSQDgnocFkU5" />
   <component name="ProjectViewState">
@@ -21,11 +47,118 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "C:/Users/Denys/My learning/3_Course/Discrete_Structures",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.denys.hudymov.deque" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.denys.hudymov.multilist" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MultiListTest">
+    <configuration name="DequeImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.denys.hudymov.deque.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.denys.hudymov.deque" />
+      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.deque.DequeImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.denys.hudymov.multilist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.denys.hudymov.multilist" />
+      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.multilist.MultiListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiListTest.addAtFirstLayerThreeNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.denys.hudymov.multilist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.denys.hudymov.multilist" />
+      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.multilist.MultiListTest" />
+      <option name="METHOD_NAME" value="addAtFirstLayerThreeNode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiListTest.addThreeElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.denys.hudymov.multilist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.denys.hudymov.multilist" />
+      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.multilist.MultiListTest" />
+      <option name="METHOD_NAME" value="addThreeElement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiListTest.addTwoChildToRoot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.denys.hudymov.multilist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.denys.hudymov.multilist" />
+      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.multilist.MultiListTest" />
+      <option name="METHOD_NAME" value="addTwoChildToRoot" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MultiListTest" />
+        <item itemvalue="JUnit.MultiListTest.addThreeElement" />
+        <item itemvalue="JUnit.MultiListTest.addAtFirstLayerThreeNode" />
+        <item itemvalue="JUnit.MultiListTest.addTwoChildToRoot" />
+        <item itemvalue="JUnit.DequeImplTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -35,10 +168,113 @@
       <option name="presentableId" value="Default" />
       <updated>1695186078920</updated>
       <workItem from="1695186079935" duration="140000" />
+      <workItem from="1695288486852" duration="7429000" />
+      <workItem from="1695307694554" duration="19995000" />
     </task>
+    <task id="LOCAL-00001" summary="idea files">
+      <created>1695329506083</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329506083</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Class and interface were moved to the deque package and deleted unit test without the body">
+      <created>1695329648914</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329648914</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Was changed package due to moving to deque package all related stuff">
+      <created>1695329719772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329719772</updated>
+    </task>
+    <task id="LOCAL-00004" summary="was added prev reference field and changed some logic related to the last and before the last element of the deque and fixed the bug with the delete methods">
+      <created>1695329876387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329876387</updated>
+    </task>
+    <task id="LOCAL-00005" summary="was created Node for multi-list">
+      <created>1695329938789</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329938789</updated>
+    </task>
+    <task id="LOCAL-00006" summary="was created interface with all needed methods of multi-list">
+      <created>1695329982945</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695329982945</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="idea files" />
+    <MESSAGE value="Class and interface were moved to the deque package and deleted unit test without the body" />
+    <MESSAGE value="Was changed package due to moving to deque package all related stuff" />
+    <MESSAGE value="was added prev reference field and changed some logic related to the last and before the last element of the deque and fixed the bug with the delete methods" />
+    <MESSAGE value="was created Node for multi-list" />
+    <MESSAGE value="was created interface with all needed methods of multi-list" />
+    <option name="LAST_COMMIT_MESSAGE" value="was created interface with all needed methods of multi-list" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab1/src/test/java/org/denys/hudymov/deque/DequeImplTest.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/deque/DequeImpl.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab1/src/test/java/org/denys/hudymov/deque/DequeImplTest.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/deque/DequeImpl.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/deque/DequeImpl.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab1/src/test/java/org/denys/hudymov/multilist/MultiListTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab1/src/test/java/org/denys/hudymov/multilist/MultiListTest.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="node" />
+        <watch expression="index == count" language="JAVA" />
+        <watch expression="Objects.equals(index, count.get())" language="JAVA" />
+        <watch expression="count.get() == index" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
