@@ -1,4 +1,4 @@
-package org.denys.hudymov;
+package org.denys.hudymov.deque;
 
 import org.junit.jupiter.api.Test;
 
@@ -28,19 +28,14 @@ class DequeImplTest {
     @Test
     public void addToTailTest() {
         deque.addToTail(2);
+        deque.print();
         deque.addToTail(1);
+        deque.print();
         deque.addToTail(0);
         deque.print();
         assertEquals(2, deque.readFrontElement().orElseThrow());
         assertEquals(0, deque.readTailElement().orElseThrow());
         assertEquals(3, deque.countSize());
-    }
-
-    @Test
-    public void cleanTest() {
-        init();
-
-
     }
 
     @Test
@@ -69,7 +64,7 @@ class DequeImplTest {
     }
 
     @Test
-    public void swapLastAndFirstTest(){
+    public void swapLastAndFirstTest() {
         init();
         deque.print();
         deque.swapLastAndFirst();
@@ -80,7 +75,7 @@ class DequeImplTest {
     }
 
     @Test
-    public void swapEmptyDeque(){
+    public void swapEmptyDeque() {
         deque.print();
         deque.swapLastAndFirst();
         assertEquals(Optional.ofNullable(null), deque.readFrontElement());
@@ -89,7 +84,7 @@ class DequeImplTest {
     }
 
     @Test
-    public void clean(){
+    public void clean() {
         init();
         deque.clean();
         assertEquals(Optional.ofNullable(null), deque.readFrontElement());
@@ -98,7 +93,7 @@ class DequeImplTest {
     }
 
     @Test
-    public void reverse(){
+    public void reverse() {
         init();
         deque.addToTail(2);
         deque.print();
@@ -110,7 +105,7 @@ class DequeImplTest {
     }
 
     @Test
-    public void reverseEmpty(){
+    public void reverseEmpty() {
         deque.print();
         deque.reverse();
         assertEquals(Optional.ofNullable(null), deque.readFrontElement());
@@ -119,7 +114,7 @@ class DequeImplTest {
     }
 
     @Test
-    public void findFirstByValue(){
+    public void findFirstByValue() {
         init();
         deque.print();
         assertEquals(true, deque.isPresent(6));
@@ -127,7 +122,7 @@ class DequeImplTest {
     }
 
     @Test
-    public void findLastByValue(){
+    public void findLastByValue() {
         init();
         deque.print();
         assertEquals(true, deque.isPresent(3));
@@ -135,7 +130,7 @@ class DequeImplTest {
     }
 
     @Test
-    public void findNotPresentByValue(){
+    public void findNotPresentByValue() {
         init();
         deque.print();
         assertEquals(false, deque.isPresent(9));
