@@ -134,7 +134,6 @@ class MultiListTest {
         node28.setNext(node30);
         assertEquals(12, tree.countElements());
         assertEquals(root, tree.getRoot());
-        tree.print();
     }
 
     @Test

@@ -25,7 +25,7 @@ public class MultiList implements GenericTree<Integer> {
             return 0;
         }
         AtomicInteger count = new AtomicInteger(0);
-        var node = traversal(-1, getRoot(), count);
+        traversal(-1, getRoot(), count);
         return count.get();
     }
 
@@ -202,7 +202,6 @@ public class MultiList implements GenericTree<Integer> {
     }
 
     private void printTree(Node<Integer> node, String indent, AtomicInteger index) {
-        ;
         if (node == null) {
             return;
         }
