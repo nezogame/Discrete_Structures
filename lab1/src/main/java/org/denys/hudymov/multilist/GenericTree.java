@@ -11,9 +11,9 @@ public interface GenericTree<T> {
 
     void deleteLayerWithChildren(int layerNumber);
 
-    void deleteBranch(int branchIndex);
+    void deleteBranch(int branchIndex, boolean deleteChild) throws IndexOutOfBoundsException;
 
-    void copy();
+    GenericTree<T> copy();
 
     void clean();
 
