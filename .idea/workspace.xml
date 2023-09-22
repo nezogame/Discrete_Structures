@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9c35258-7137-44b7-bbce-962c144bd15c" name="Changes" comment="was created interface with all needed methods of multi-list">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f9c35258-7137-44b7-bbce-962c144bd15c" name="Changes" comment="To the App class was added refer to TreeConsoleInterface and calling run method">
+      <change beforePath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/multilist/MultiList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/multilist/MultiList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,11 +51,16 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/Denys/My learning/3_Course/Discrete_Structures",
+    "last_opened_file_path": "C:/Users/Denys/My learning/online-bookstore",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -71,17 +76,15 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.MultiListTest">
-    <configuration name="DequeImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.App" />
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.denys.hudymov.deque.*" />
+          <option name="PATTERN" value="org.denys.hudymov.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.denys.hudymov.deque" />
-      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.deque.DequeImplTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiListTest.addAtFirstLayerThreeNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiListTest.testClen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
@@ -111,13 +114,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.denys.hudymov.multilist" />
       <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.multilist.MultiListTest" />
-      <option name="METHOD_NAME" value="addAtFirstLayerThreeNode" />
+      <option name="METHOD_NAME" value="testClen" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiListTest.addThreeElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiListTest.testCopy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
@@ -127,13 +130,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.denys.hudymov.multilist" />
       <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.multilist.MultiListTest" />
-      <option name="METHOD_NAME" value="addThreeElement" />
+      <option name="METHOD_NAME" value="testCopy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiListTest.addTwoChildToRoot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiListTest.testDeleteBranchEmptyTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
@@ -143,7 +146,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.denys.hudymov.multilist" />
       <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.multilist.MultiListTest" />
-      <option name="METHOD_NAME" value="addTwoChildToRoot" />
+      <option name="METHOD_NAME" value="testDeleteBranchEmptyTree" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,10 +155,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MultiListTest" />
-        <item itemvalue="JUnit.MultiListTest.addThreeElement" />
-        <item itemvalue="JUnit.MultiListTest.addAtFirstLayerThreeNode" />
-        <item itemvalue="JUnit.MultiListTest.addTwoChildToRoot" />
-        <item itemvalue="JUnit.DequeImplTest" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.MultiListTest.testCopy" />
+        <item itemvalue="JUnit.MultiListTest.testClen" />
+        <item itemvalue="JUnit.MultiListTest.testDeleteBranchEmptyTree" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +172,8 @@
       <updated>1695186078920</updated>
       <workItem from="1695186079935" duration="140000" />
       <workItem from="1695288486852" duration="7429000" />
-      <workItem from="1695307694554" duration="19995000" />
+      <workItem from="1695307694554" duration="20417000" />
+      <workItem from="1695361181902" duration="35005000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1695329506083</created>
@@ -213,11 +217,106 @@
       <option name="project" value="LOCAL" />
       <updated>1695329982945</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="was created a multi-list class that implements GenericTree&lt;Integer&gt;, has a root field and helper method for finding element and printing tree">
+      <created>1695330056697</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695330056697</updated>
+    </task>
+    <task id="LOCAL-00008" summary="was created a unit test class for multi-list class">
+      <created>1695330104333</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695330104333</updated>
+    </task>
+    <task id="LOCAL-00009" summary="gitignore file updated">
+      <created>1695361274621</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695361274621</updated>
+    </task>
+    <task id="LOCAL-00010" summary="gitignore file updated">
+      <created>1695361366547</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695361366547</updated>
+    </task>
+    <task id="LOCAL-00011" summary="gitignore file updated">
+      <created>1695362604054</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695362604054</updated>
+    </task>
+    <task id="LOCAL-00012" summary="TreeConsoleInterface has been created for user's ability to interact through the console with a multi-list class and it's methods">
+      <created>1695412911325</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695412911325</updated>
+    </task>
+    <task id="LOCAL-00013" summary="TreeConsoleInterface has been created for user's ability to interact through the console with a multi-list class and it's methods">
+      <created>1695412961634</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695412961634</updated>
+    </task>
+    <task id="LOCAL-00014" summary="MultiList Test was finalized with all unit tests not the best, but it's better than nothing">
+      <created>1695413134156</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695413134156</updated>
+    </task>
+    <task id="LOCAL-00015" summary="MultiListTest was finalized with all unit tests not the best, but it's better than nothing">
+      <created>1695413162791</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695413162791</updated>
+    </task>
+    <task id="LOCAL-00016" summary="MultiList has been implemented all methods of the GenericTree Interface">
+      <created>1695413262071</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1695413262071</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Was changed signature of deleteBranch and copy methods">
+      <created>1695413302872</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1695413302872</updated>
+    </task>
+    <task id="LOCAL-00018" summary="To the App class was added refer to TreeConsoleInterface and calling run method">
+      <created>1695413448769</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1695413448769</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea files" />
@@ -226,7 +325,16 @@
     <MESSAGE value="was added prev reference field and changed some logic related to the last and before the last element of the deque and fixed the bug with the delete methods" />
     <MESSAGE value="was created Node for multi-list" />
     <MESSAGE value="was created interface with all needed methods of multi-list" />
-    <option name="LAST_COMMIT_MESSAGE" value="was created interface with all needed methods of multi-list" />
+    <MESSAGE value="was created a multi-list class that implements GenericTree&lt;Integer&gt;, has a root field and helper method for finding element and printing tree" />
+    <MESSAGE value="was created a unit test class for multi-list class" />
+    <MESSAGE value="gitignore file updated" />
+    <MESSAGE value="TreeConsoleInterface has been created for user's ability to interact through the console with a multi-list class and it's methods" />
+    <MESSAGE value="MultiList Test was finalized with all unit tests not the best, but it's better than nothing" />
+    <MESSAGE value="MultiListTest was finalized with all unit tests not the best, but it's better than nothing" />
+    <MESSAGE value="MultiList has been implemented all methods of the GenericTree Interface" />
+    <MESSAGE value="Was changed signature of deleteBranch and copy methods" />
+    <MESSAGE value="To the App class was added refer to TreeConsoleInterface and calling run method" />
+    <option name="LAST_COMMIT_MESSAGE" value="To the App class was added refer to TreeConsoleInterface and calling run method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -258,23 +366,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/lab1/src/test/java/org/denys/hudymov/multilist/MultiListTest.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="26" />
+          <line>373</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lab1/src/test/java/org/denys/hudymov/multilist/MultiListTest.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="28" />
+          <url>file://$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/multilist/TreeConsoleInterface.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="node" />
-        <watch expression="index == count" language="JAVA" />
-        <watch expression="Objects.equals(index, count.get())" language="JAVA" />
-        <watch expression="count.get() == index" language="JAVA" />
-      </configuration>
-    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

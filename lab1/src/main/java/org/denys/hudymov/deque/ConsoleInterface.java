@@ -67,7 +67,6 @@ public class ConsoleInterface {
                 case 13 -> deque.print();
                 case 0 -> {
                     System.out.println("Exiting Deque Console Interface.");
-                    scanner.close();
                     return;
                 }
                 default -> System.out.println("Invalid choice. Try again.");
