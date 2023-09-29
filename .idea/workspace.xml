@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9c35258-7137-44b7-bbce-962c144bd15c" name="Changes" comment="To the App class was added refer to TreeConsoleInterface and calling run method">
-      <change beforePath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/multilist/MultiList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/multilist/MultiList.java" afterDir="false" />
-    </list>
+    <list default="true" id="f9c35258-7137-44b7-bbce-962c144bd15c" name="Changes" comment="idea files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +20,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="developer" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -44,38 +55,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/Denys/My learning/online-bookstore",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Denys/My learning/3_Course/Discrete_Structures&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.denys.hudymov" />
       <recent name="org.denys.hudymov.deque" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.denys.hudymov.multilist" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MultiListTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.App" />
       <module name="lab1" />
@@ -89,7 +102,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DequeImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.denys.hudymov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.denys.hudymov" />
+      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.DequeImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DequeImplTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.denys.hudymov.deque.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.denys.hudymov.deque" />
+      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.deque.DequeImplTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiListTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
@@ -104,7 +148,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiListTest.testClen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiListTest.lenz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
         <pattern>
@@ -114,39 +158,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.denys.hudymov.multilist" />
       <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.multilist.MultiListTest" />
-      <option name="METHOD_NAME" value="testClen" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MultiListTest.testCopy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.denys.hudymov.multilist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.denys.hudymov.multilist" />
-      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.multilist.MultiListTest" />
-      <option name="METHOD_NAME" value="testCopy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MultiListTest.testDeleteBranchEmptyTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.denys.hudymov.multilist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.denys.hudymov.multilist" />
-      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.multilist.MultiListTest" />
-      <option name="METHOD_NAME" value="testDeleteBranchEmptyTree" />
+      <option name="METHOD_NAME" value="lenz" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MultiListTest" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.MultiListTest.testCopy" />
-        <item itemvalue="JUnit.MultiListTest.testClen" />
-        <item itemvalue="JUnit.MultiListTest.testDeleteBranchEmptyTree" />
+        <item itemvalue="JUnit.DequeImplTest.test" />
+        <item itemvalue="JUnit.MultiListTest.lenz" />
+        <item itemvalue="JUnit.MultiListTest (1)" />
+        <item itemvalue="JUnit.DequeImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +186,9 @@
       <workItem from="1695288486852" duration="7429000" />
       <workItem from="1695307694554" duration="20417000" />
       <workItem from="1695361181902" duration="35005000" />
+      <workItem from="1695467688776" duration="950000" />
+      <workItem from="1695549605037" duration="359000" />
+      <workItem from="1695654689476" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1695329506083</created>
@@ -301,7 +316,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695413448769</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Was added additional case in method swapLastAndFirst and in recursiveSwap was fixed adding prev node">
+      <created>1695978547310</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1695978547310</updated>
+    </task>
+    <task id="LOCAL-00020" summary="idea files">
+      <created>1695978555950</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1695978555950</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +348,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="idea files" />
     <MESSAGE value="Class and interface were moved to the deque package and deleted unit test without the body" />
     <MESSAGE value="Was changed package due to moving to deque package all related stuff" />
     <MESSAGE value="was added prev reference field and changed some logic related to the last and before the last element of the deque and fixed the bug with the delete methods" />
@@ -334,7 +362,9 @@
     <MESSAGE value="MultiList has been implemented all methods of the GenericTree Interface" />
     <MESSAGE value="Was changed signature of deleteBranch and copy methods" />
     <MESSAGE value="To the App class was added refer to TreeConsoleInterface and calling run method" />
-    <option name="LAST_COMMIT_MESSAGE" value="To the App class was added refer to TreeConsoleInterface and calling run method" />
+    <MESSAGE value="Was added additional case in method swapLastAndFirst and in recursiveSwap was fixed adding prev node" />
+    <MESSAGE value="idea files" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -356,26 +386,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/deque/DequeImpl.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/deque/DequeImpl.java</url>
           <line>65</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lab1/src/test/java/org/denys/hudymov/multilist/MultiListTest.java</url>
-          <line>373</line>
-          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/multilist/TreeConsoleInterface.java</url>
           <line>31</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/deque/DequeImpl.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab1/src/main/java/org/denys/hudymov/deque/DequeImpl.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="System.out.println(getTail().getPrev().value)" language="JAVA" custom="com.sun.org.apache.xml.internal.serializer.XSLOutputAttributes" />
+        <watch expression="System.out.println(node.value)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
