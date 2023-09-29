@@ -89,15 +89,18 @@ public class DequeImpl<T> implements Deque<T> {
     @Override
     public void swapLastAndFirst() {
         Node<T> node = getTail();
-        if (!isEmpty()) {
+        if (!isEmpty() && countSize() !=2) {
             Node<T> beforeLastNode = getTail().getPrev();
             beforeLastNode.setNext(null);
             node.setNext(getFront().getNext());
             setTail(getFront());
             beforeLastNode.setNext(getTail());
-            setFront(node);
-            getTail().setNext(null);
+        } else {
+            node.setNext(getFront());
+            setTail(getFront());
         }
+        setFront(node);
+        getTail().setNext(null);
     }
 
     @Override
@@ -176,6 +179,7 @@ public class DequeImpl<T> implements Deque<T> {
             return node;
         }
         var temp = recursiveSwap(node.getNext());
+        node.setPrev(temp);
         temp.setNext(node);
         return node;
     }
