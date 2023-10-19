@@ -1,15 +1,18 @@
 package org.denys.hudymov;
 
+import java.util.NoSuchElementException;
+import java.util.Optional;
+
 public interface SkipList<T extends Comparable<? super T>> {
     int size();
 
-    int levelSize();
+    int levelSize(int level);
 
     Node<T> add(T value);
 
-    Node<T> find(int key);
+    Optional<Node<T>> find(int key);
 
-    Node<T> delete(int key);
+    void delete(int key) throws NoSuchElementException;
 
     SkipList<T> copy();
 
