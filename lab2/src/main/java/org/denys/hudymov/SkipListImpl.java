@@ -1,7 +1,10 @@
 package org.denys.hudymov;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Optional;
 import java.util.Random;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,20 +18,44 @@ import lombok.ToString;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class SkipListImpl<T extends Comparable<? super T>> implements SkipList<Integer> {
+@Builder(toBuilder = true)
+public class SkipListImpl implements SkipList<Integer> {
     private final Random rand = new Random();
     private int maxLevel;
     private Node<Integer> head;
+    private boolean limited;
 
     @Override
     public int size() {
-        return 0;
+        int count = 0;
+        var current = head; // Start from the head node
+        while (current.getBelow() != null) {
+            current = current.getBelow(); // Move down to the bottom level
+        }
+        while (current != null) {
+            count++;
+            current = current.getNext(); // Traverse horizontally at the bottom level
+        }
+        return count;
     }
 
     @Override
-    public int levelSize() {
-        return 0;
+    public int levelSize(int level) {
+        if (level < 0 || level > maxLevel) {
+            throw new IllegalArgumentException("Invalid level");
+        }
+
+        int count = 0;
+        var current = head;
+        while (current.getLevel() > level && current.getBelow() != null) {
+            current = current.getBelow(); // Traverse down to the desired level
+        }
+
+        while (current != null) {
+            count++;
+            current = current.getNext(); // Traverse horizontally at the desired level
+        }
+        return count;
     }
 
     @Override
@@ -40,31 +67,54 @@ public class SkipListImpl<T extends Comparable<? super T>> implements SkipList<I
         }
 
         var level = 0;
-        while (rand.nextFloat(1) > 0.75) {
-            level++;
+        if (isLimited()) {
+            while (rand.nextFloat(1) > 0.75 && level < maxLevel) {
+                level++;
+            }
+        } else {
+            while (rand.nextFloat(1) > 0.75) {
+                level++;
+            }
         }
         var newNode = Node.<Integer>builder().key(value).value(value).level(level).build();
+        if(head.getValue().compareTo(value) > 0){
+            List<Node<Integer>> prevNodes = new ArrayList<>();
+            findPrevHelper(prevNodes, head, value);
+            for (int i = 0; i <= maxLevel; i++) {
+                head = newNode.toBuilder()
+                        .level(i)
+                        .next(prevNodes.get(i))
+                        .below(i>0 ? head:null)
+                        .build();
+            }
+            return newNode;
+        }
         if (level > maxLevel) {
+
             maxLevel = level;
             for (int i = head.getLevel() + 1; i <= maxLevel; i++) {
-                var nodeBelow = Node.<Integer>builder().key(head.getKey()).value(head.getValue()).level(i).build();
+                var nodeBelow = Node.<Integer>builder()
+                        .key(head.getKey())
+                        .value(head.getValue())
+                        .level(i)
+                        .build();
                 nodeBelow.setBelow(head);
                 head = nodeBelow;
             }
         }
         List<Node<Integer>> prevNodes = new ArrayList<>();
-        addFindPrevHelper(prevNodes, head, value);
+        findPrevHelper(prevNodes, head, value);
 
         addHelper(prevNodes, newNode, level);
         return newNode;
     }
 
-    private void addFindPrevHelper(List<Node<Integer>> prevNodes, Node<Integer> current, Integer value) {
-        while (current.getNext() != null && current.getNext().getValue().compareTo(value) < 1) {
+    private void findPrevHelper(List<Node<Integer>> prevNodes, Node<Integer> current, Integer value) {
+        while (current.getNext() != null && current.getNext().getValue().compareTo(value) < 0) {
             current = current.getNext();
         }
         if (current.getBelow() != null) {
-            addFindPrevHelper(prevNodes, current.getBelow(), value);
+            findPrevHelper(prevNodes, current.getBelow(), value);
         }
         prevNodes.add(current);
     }
@@ -91,27 +141,103 @@ public class SkipListImpl<T extends Comparable<? super T>> implements SkipList<I
     }
 
     @Override
-    public Node<Integer> find(int key) {
-        return null;
+    public Optional<Node<Integer>> find(int searchKey) {
+        Node<Integer> current = head; // Start from the top-left corner
+
+        while (current != null) {
+            if (current.getNext() == null || current.getNext().getKey() > searchKey) {
+                if (current.getKey() == searchKey) {
+                    return Optional.of(current); // Node found
+                }
+                if (current.getBelow() != null) {
+                    current = current.getBelow(); // Move down one level
+                } else {
+                    break; // Reached the bottom level, key not found
+                }
+            } else {
+                current = current.getNext(); // Move to the right
+            }
+        }
+
+        return Optional.empty(); // Key not found in the skip list
     }
 
     @Override
-    public Node<Integer> delete(int key) {
-        return null;
+    public void delete(int deleteKey) throws NoSuchElementException {
+        Optional<Node<Integer>> nodeToDelete = find(deleteKey);
+        if (nodeToDelete.isEmpty()) {
+            throw new NoSuchElementException("Key not found in the Skip List");
+        }
+        List<Node<Integer>> prevNodes = new ArrayList<>();
+        findPrevHelper(prevNodes, getHead(), deleteKey);
+
+        if (head.getKey() == deleteKey) {
+            head = prevNodes.get(0).getNext();
+            for (int i = head.getLevel()+1; i <= maxLevel; i++) {
+                head = getHead().toBuilder()
+                        .level(i)
+                        .below(head)
+                        .next(prevNodes.get(i).getNext().getKey() != head.getKey() ? prevNodes.get(i).getNext(): prevNodes.get(i).getNext().getNext())
+                        .build();
+            }
+            /*for (var pNode : prevNodes) {
+                var nodeBelow = nodeToDelete.get().toBuilder()
+                        .level(pNode.getLevel())
+                        .build();
+                nodeBelow.setBelow(head);
+                head = nodeBelow;
+            }*/
+
+        } else {
+            Collections.reverse(prevNodes);
+            for (var pNode : prevNodes) {
+                pNode.setNext(nodeToDelete.get().getNext());
+                if(nodeToDelete.get().getBelow()!=null) {
+                    nodeToDelete = Optional.of(nodeToDelete.get().getBelow());
+                }
+            }
+
+        }
     }
 
     @Override
     public SkipList<Integer> copy() {
-        return null;
+        SkipListImpl copyList = SkipListImpl.<Integer>builder()
+                .build();
+        copyList.head = copyNodeRecursively(head); // Start the recursion at the head of the original list
+        copyList.maxLevel = maxLevel; // Set the max level of the copy list
+        return copyList;
+    }
+
+    private Node<Integer> copyNodeRecursively(Node<Integer> original) {
+        if (original == null) {
+            return null; // Base case: null node
+        }
+
+        // Copy the current node
+        var newNode = original.toBuilder()
+                .below(null)
+                .next(null)
+                .build();
+
+        // Recursively copy the next and below nodes
+        newNode.setNext(copyNodeRecursively(original.getNext()));
+        newNode.setBelow(copyNodeRecursively(original.getBelow()));
+
+        return newNode;
     }
 
     @Override
     public void clean() {
-
+        head = null;
     }
 
     @Override
     public void print() {
+        if(head==null){
+            System.out.println("List is empty");
+            return;
+        }
         var levelNode = head;
         var currentLevel = head.getLevel();
         while (currentLevel >= 0) {
@@ -120,7 +246,7 @@ public class SkipListImpl<T extends Comparable<? super T>> implements SkipList<I
 
 
             while (currentNode != null) {
-                System.out.print("Key: " + currentNode.getKey() + ", LEVEL: " + currentNode.getLevel() + "->");
+                System.out.print("Key: " + currentNode.getKey()+ " ->");
                 currentNode = currentNode.getNext();
             }
             System.out.println("Nil");
