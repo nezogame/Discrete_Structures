@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9c35258-7137-44b7-bbce-962c144bd15c" name="Changes" comment="idea file">
-      <change afterPath="$PROJECT_DIR$/lab2/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f9c35258-7137-44b7-bbce-962c144bd15c" name="Changes" comment=".idea files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/src/main/java/org/denys/hudymov/SkipList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/src/main/java/org/denys/hudymov/SkipList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/src/main/java/org/denys/hudymov/SkipListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/src/main/java/org/denys/hudymov/SkipListImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/src/test/java/org/denys/hudymov/SkipListImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/src/test/java/org/denys/hudymov/SkipListImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,27 +60,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Denys/My learning/3_Course/Data_Base&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/Denys/My learning/3_Course/QA_Automation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -95,7 +94,20 @@
       <recent name="org.denys.hudymov.multilist" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SkipListImplTest.AddNodeToHead">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.App" />
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.denys.hudymov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SkipListImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab2" />
       <extension name="coverage">
@@ -111,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SkipListImplTest.AddNodeToHead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SkipListImplTest.addSecond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab2" />
       <extension name="coverage">
         <pattern>
@@ -121,13 +133,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.denys.hudymov" />
       <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.SkipListImplTest" />
-      <option name="METHOD_NAME" value="AddNodeToHead" />
+      <option name="METHOD_NAME" value="addSecond" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SkipListImplTest.AddTreeNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SkipListImplTest.copy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab2" />
       <extension name="coverage">
         <pattern>
@@ -137,13 +149,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.denys.hudymov" />
       <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.SkipListImplTest" />
-      <option name="METHOD_NAME" value="AddTreeNode" />
+      <option name="METHOD_NAME" value="copy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SkipListImplTest.many" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SkipListImplTest.deleteFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab2" />
       <extension name="coverage">
         <pattern>
@@ -153,23 +165,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.denys.hudymov" />
       <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.SkipListImplTest" />
-      <option name="METHOD_NAME" value="many" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SkipListImplTest.testAddToHead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.denys.hudymov.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.denys.hudymov" />
-      <option name="MAIN_CLASS_NAME" value="org.denys.hudymov.SkipListImplTest" />
-      <option name="METHOD_NAME" value="testAddToHead" />
+      <option name="METHOD_NAME" value="deleteFirst" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SkipListImplTest.AddNodeToHead" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.SkipListImplTest" />
-        <item itemvalue="JUnit.SkipListImplTest.many" />
-        <item itemvalue="JUnit.SkipListImplTest.AddTreeNode" />
-        <item itemvalue="JUnit.SkipListImplTest.testAddToHead" />
+        <item itemvalue="JUnit.SkipListImplTest.addSecond" />
+        <item itemvalue="JUnit.SkipListImplTest.deleteFirst" />
+        <item itemvalue="JUnit.SkipListImplTest.copy" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +196,7 @@
       <workItem from="1695467688776" duration="950000" />
       <workItem from="1695549605037" duration="359000" />
       <workItem from="1695654689476" duration="15000" />
-      <workItem from="1697490960201" duration="32972000" />
+      <workItem from="1697490960201" duration="64430000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1695329506083</created>
@@ -328,7 +324,42 @@
       <option name="project" value="LOCAL" />
       <updated>1695413448769</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Node class contains fields of key, value, level and pointers to next and below node">
+      <created>1697666391895</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1697666391895</updated>
+    </task>
+    <task id="LOCAL-00020" summary="SkipList interface with all requested functionality">
+      <created>1697666473387</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1697666473387</updated>
+    </task>
+    <task id="LOCAL-00021" summary="SkipListImpl is an implementation of SkipList and only was implemented add and print methods">
+      <created>1697666536183</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1697666536183</updated>
+    </task>
+    <task id="LOCAL-00022" summary="SkipListImplTest class contain Two unit test for add method">
+      <created>1697666578830</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1697666578830</updated>
+    </task>
+    <task id="LOCAL-00023" summary=".idea files">
+      <created>1697666598483</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1697666598483</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +394,12 @@
     <MESSAGE value="To the App class was added refer to TreeConsoleInterface and calling run method" />
     <MESSAGE value="Was added additional case in method swapLastAndFirst and in recursiveSwap was fixed adding prev node" />
     <MESSAGE value="idea files" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea files" />
+    <MESSAGE value="Node class contains fields of key, value, level and pointers to next and below node" />
+    <MESSAGE value="SkipList interface with all requested functionality" />
+    <MESSAGE value="SkipListImpl is an implementation of SkipList and only was implemented add and print methods" />
+    <MESSAGE value="SkipListImplTest class contain Two unit test for add method" />
+    <MESSAGE value=".idea files" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -407,6 +443,21 @@
           <url>file://$PROJECT_DIR$/lab1/src/test/java/org/denys/hudymov/deque/DequeImplTest.java</url>
           <line>158</line>
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab2/src/test/java/org/denys/hudymov/SkipListImplTest.java</url>
+          <line>170</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab2/src/test/java/org/denys/hudymov/SkipListImplTest.java</url>
+          <line>223</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lab2/src/test/java/org/denys/hudymov/SkipListImplTest.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="97" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
