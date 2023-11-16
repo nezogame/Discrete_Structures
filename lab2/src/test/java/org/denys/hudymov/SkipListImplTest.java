@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class SkipListImplTest {
@@ -112,14 +111,14 @@ class SkipListImplTest {
 
     @Test
     public void addSecond() {
-        list.add(3);
-        list.add(2);
+        list.limit(5);
+        list.add(9);
+        list.add(10);
         list.add(4);
         list.add(5);
         list.add(6);
         list.add(7);
         list.add(8);
-        list.add(9);
         System.out.println("<Before ONE>--------");
         list.print();
         list.add(1);
