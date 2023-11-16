@@ -19,4 +19,8 @@ public interface SkipList<T extends Comparable<? super T>> {
     void clean();
 
     void print();
+
+    void limit(int size);
+
+    void setP(float coinFlip);
 }
