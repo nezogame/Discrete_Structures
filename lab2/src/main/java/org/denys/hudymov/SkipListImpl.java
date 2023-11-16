@@ -24,7 +24,7 @@ public class SkipListImpl implements SkipList<Integer> {
     private int maxLevel;
     private Node<Integer> head;
     private boolean limited;
-
+    private float p;
     @Override
     public int size() {
         int count = 0;
@@ -62,17 +62,24 @@ public class SkipListImpl implements SkipList<Integer> {
     public Node<Integer> add(Integer value) {
 
         if (head == null) {
-            head = Node.<Integer>builder().key(value).value(value).build();
+            var newNode = Node.<Integer>builder().key(value).value(value).build();
+            for (int i = 0; i <= maxLevel; i++) {
+                head = newNode.toBuilder()
+                        .level(i)
+                        .next(null)
+                        .below(i>0 ? head:null)
+                        .build();
+            }
             return head;
         }
 
         var level = 0;
         if (isLimited()) {
-            while (rand.nextFloat(1) > 0.75 && level < maxLevel) {
+            while (rand.nextFloat(1) > p && level < maxLevel) {
                 level++;
             }
         } else {
-            while (rand.nextFloat(1) > 0.75) {
+            while (rand.nextFloat(1) > p) {
                 level++;
             }
         }
@@ -83,7 +90,7 @@ public class SkipListImpl implements SkipList<Integer> {
             for (int i = 0; i <= maxLevel; i++) {
                 head = newNode.toBuilder()
                         .level(i)
-                        .next(prevNodes.get(i))
+                        .next(prevNodes.size()>i?prevNodes.get(i):null)
                         .below(i>0 ? head:null)
                         .build();
             }
@@ -267,4 +274,9 @@ public class SkipListImpl implements SkipList<Integer> {
         return level;
     }
 
+    @Override
+    public void limit(int size) {
+        maxLevel=size;
+        limited=true;
+    }
 }
