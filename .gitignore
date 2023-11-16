@@ -39,10 +39,12 @@ bin
 spring-*/src/main/java/META-INF/MANIFEST.MF
 
 # IDEA artifacts and output dirs
+.idea/
+/*/.idea/
+/*/target/
 *.iml
 *.ipr
 *.iws
-.idea
 out
 test-output
 atlassian-ide-plugin.xml
@@ -51,3 +53,7 @@ atlassian-ide-plugin.xml
 .vscode/
 
 cached-antora-playbook.yml
+
+*.rar
+*.xlsx
+
