@@ -193,7 +193,7 @@ public class App {
         stds.forEach(s -> System.out.println("std: " + s));
         stds.clear();
 
-        timestamps.forEach((key, value) -> System.out.println(key + ":" + value));
+        //timestamps.forEach((key, value) -> System.out.println(key + ":" + value));
         System.out.println("------------------------");
         System.out.println("Start 1/4");
         list.setP(1 / 4.0f);
